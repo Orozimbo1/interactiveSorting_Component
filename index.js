@@ -21,7 +21,10 @@ for(let i = 0; i < ratings.length; i++) {
 }
 
 submit.addEventListener('click', () => {
-  !rate && alert('You have to choose a rating')
+  if (!rate) {
+    alert('You have to choose a rating')
+    return
+  }
   start.classList.add('hidden')
   span.innerText = rate
   end.classList.add('show')

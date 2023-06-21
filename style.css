@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Overpass';
+  src: url(assets/fonts/Overpass-VariableFont_wght.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,10 +13,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(0, 0, 0);
+  background-color: hsl(216, 12%, 8%);
   width: 100vw;
   height: 100vh;
-  color: white;
+  font-family: 'Overpass';
 }
 
 ul {
@@ -22,18 +27,19 @@ ul {
 ul li {
   list-style: none;
   margin: 2em 0;
+  color: hsl(217, 12%, 63%);
   cursor: pointer;
   transition: .3s;
 }
 
 ul li:hover {
-  background-color: rgb(255, 136, 0);
+  background-color: hsl(25, 97%, 53%);
 }
 
 main {
   width: 90vw;
   height: 65vh;
-  background-color: rgb(58, 58, 58);
+  background-color: hsl(213, 19%, 18%);
   padding: 1.5em;
   border-radius: 15px;
 }
@@ -53,6 +59,12 @@ main {
 
 h1 {
   margin: 1em 0;
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  color: hsl(216, 12%, 54%);
+  font-size: 15px;
 }
 
 .circle {
@@ -62,7 +74,7 @@ h1 {
   height: 2.5em;
   width: 2.5em;
   border-radius: 50%;
-  background-color: rgb(95, 95, 95);
+  background-color: hsl(217, 12%, 30%);
 }
 
 .active {
@@ -72,6 +84,7 @@ h1 {
   height: 2.5em;
   width: 2.5em;
   border-radius: 50%;
+  color: hsl(0, 0%, 100%);
   background-color: rgb(160, 160, 248);
 }
 
@@ -80,7 +93,7 @@ button {
   height: 3em;
   border: 2px solid transparent;
   border-radius: 1.5em;
-  background-color: rgb(255, 136, 0);
+  background-color: hsl(25, 97%, 53%);
   text-transform: uppercase;
   font-size: 1em;
   letter-spacing: .3em;
@@ -92,8 +105,8 @@ button {
 
 button:hover {
   background-color: white;
-  color: rgb(255, 136, 0);
-  border: 2px solid rgb(255, 136, 0);
+  color: hsl(25, 97%, 53%);
+  border: 2px solid hsl(25, 97%, 53%);
 }
 
 #end {
@@ -113,7 +126,7 @@ button:hover {
   border-radius: 1em;
   margin: .5em auto 2em;
   background-color: rgb(95, 95, 95);
-  color: rgb(255, 136, 0);
+  color: hsl(25, 97%, 53%);
 }
 
 @media screen and (min-width: 376px) {
